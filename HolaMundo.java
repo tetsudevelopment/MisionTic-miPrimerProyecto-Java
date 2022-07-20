@@ -38,7 +38,8 @@
       int multiplicacion = n1 * n2;
       multiplicacion *= 2;
       //LLamar funciones 
-      calcular_promedio();
+      double promedio=calcular_promedio_3(10, 20);
+      System.out.println("El promedio es Retornado " + promedio);
     }
     //Crear una funcion suma o calcular promedio
     public static void calcular_promedio() {
@@ -46,5 +47,15 @@
       int n2 = 20;
       double promedio = (n1 + n2) / 2;
       System.out.println("El promedio es " + promedio);
+    }
+    //Funcion que reciva parametros
+    public static void calcular_promedio_2(double n1, double n2) {
+      double promedio = (n1 + n2) / 2;
+      System.out.println("El promedio_2 es " + promedio);
+    }
+    //Funcion que retorne datos
+    public static double calcular_promedio_3(double n1, double n2) {
+      double promedio = (n1 + n2) / 2;
+      return promedio;
     }
   }
