@@ -16,7 +16,7 @@
       System.out.println("Hola Mundo");
       System.out.println("Soy Brayan Programando en Java");
       System.out.println("Segundo salto");
-      
+
       //VARIABLES
       int entero = 10;
       double decimal = 10.5;
@@ -37,6 +37,14 @@
       suma += 10;
       int multiplicacion = n1 * n2;
       multiplicacion *= 2;
-
+      //LLamar funciones 
+      calcular_promedio();
+    }
+    //Crear una funcion suma o calcular promedio
+    public static void calcular_promedio() {
+      int n1 = 10;
+      int n2 = 20;
+      double promedio = (n1 + n2) / 2;
+      System.out.println("El promedio es " + promedio);
     }
   }
